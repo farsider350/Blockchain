@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/autx_ar.qm</file>
+        <file alias="bg">locale/autx_bg.qm</file>
+        <file alias="de">locale/autx_de.qm</file>
+        <file alias="en">locale/autx_en.qm</file>
+        <file alias="es">locale/autx_es.qm</file>
+        <file alias="fi">locale/autx_fi.qm</file>
+        <file alias="fr">locale/autx_fr.qm</file>
+        <file alias="it">locale/autx_it.qm</file>
+        <file alias="ja">locale/autx_ja.qm</file>
+        <file alias="ko">locale/autx_ko.qm</file>
+        <file alias="nl">locale/autx_nl.qm</file>
+        <file alias="pl">locale/autx_pl.qm</file>
+        <file alias="pt">locale/autx_pt.qm</file>
+        <file alias="ro">locale/autx_ro.qm</file>
+        <file alias="ru">locale/autx_ru.qm</file>
+        <file alias="sk">locale/autx_sk.qm</file>
+        <file alias="th">locale/autx_th.qm</file>
+        <file alias="tr">locale/autx_tr.qm</file>
+        <file alias="vi">locale/autx_vi.qm</file>
+        <file alias="zh_CN">locale/autx_zh_CN.qm</file>
+        <file alias="zh_TW">locale/autx_zh_TW.qm</file>
+    </qresource>
+</RCC>

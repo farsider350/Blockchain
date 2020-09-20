@@ -1,0 +1,6 @@
+usr/local/bin/autx-qt usr/bin
+share/pixmaps/autx32.xpm usr/share/pixmaps
+share/pixmaps/autx16.xpm usr/share/pixmaps
+share/pixmaps/autx128.png usr/share/pixmaps
+debian/autx-qt.desktop usr/share/applications
+debian/autx-qt.protocol usr/share/kde4/services/

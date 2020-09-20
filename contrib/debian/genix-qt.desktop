@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=autx Core
+Comment=autx P2P Cryptocurrency
+Comment[de]=Verbinde mit dem autx peer-to-peer Netzwerk
+Comment[fr]=autx, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=autx, eşten eşe kriptografik sanal para birimi
+Exec=autx-qt %u
+Terminal=false
+Type=Application
+Icon=autx128
+MimeType=x-scheme-handler/autx;
+Categories=Office;Finance;

@@ -1,0 +1,11 @@
+[Protocol]
+exec=autx-qt '%u'
+protocol=autx
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
