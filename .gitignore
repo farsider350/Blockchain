@@ -6,10 +6,10 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/genix
+src/autx
 src/genixd
-src/genix-cli
-src/genix-tx
+src/autx-cli
+src/autx-tx
 src/test/test_genix
 src/test/test_genix_fuzzy
 src/qt/test/test_genix-qt
@@ -36,8 +36,8 @@ config.log
 config.status
 configure
 libtool
-src/config/genix-config.h
-src/config/genix-config.h.in
+src/config/autx-config.h
+src/config/autx-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -82,13 +82,13 @@ libconftest.dylib*
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-genix-qt
-genix-Qt.app
+autx-qt
+autx-Qt.app
 !/depends/Makefile
 
 # Unit-tests
 Makefile.test
-genix-qt_test
+autx-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -121,13 +121,13 @@ test/cache/*
 
 libgenixconsensus.pc
 contrib/devtools/split-debug.sh
-src/qt/genix-qt.bash
+src/qt/autx-qt.bash
 qa/pull-tester/tests-config.sh
 
 #development symlinks
-genix-cli
+autx-cli
 genixd
-genix-qt
+autx-qt
 make
 
 /docker/bin

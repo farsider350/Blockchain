@@ -1,39 +1,39 @@
-genix Core
+autx Core
 ==========
 
-This is the official reference wallet for genix digital currency and comprises the backbone of the genix peer-to-peer network. You can [download genix Core](https://www.genix.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for autx digital currency and comprises the backbone of the autx peer-to-peer network. You can [download autx Core](https://www.autx.org/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run genix on your native platform.
+The following are some helpful notes on how to run autx on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/genix-qt` (GUI) or
+- `bin/autx-qt` (GUI) or
 - `bin/genixd` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run genix-qt.exe.
+Unpack the files into a directory, and then run autx-qt.exe.
 
 ### OS X
 
-Drag genix-Qt to your applications folder, and then run genix-Qt.
+Drag autx-Qt to your applications folder, and then run autx-Qt.
 
 ### Need Help?
 
-* See the [genix documentation](https://docs.genix.org)
+* See the [autx documentation](https://docs.autx.org)
 for help and more information.
-* See the [genix Developer Documentation](https://genix-docs.github.io/) 
+* See the [autx Developer Documentation](https://autx-docs.github.io/) 
 for technical specifications and implementation details.
-* Ask for help on [genix Nation Discord](http://genixchat.org)
-* Ask for help on the [genix Forum](https://genix.org/forum)
+* Ask for help on [autx Nation Discord](http://genixchat.org)
+* Ask for help on the [autx Forum](https://autx.org/forum)
 
 Building
 ---------------------
-The following are developer notes on how to build genix Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build autx Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -43,7 +43,7 @@ The following are developer notes on how to build genix Core on your native plat
 
 Development
 ---------------------
-The genix Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The autx Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
@@ -59,8 +59,8 @@ The genix Core repo's [root README](/README.md) contains relevant information on
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [genix Forum](https://genix.org/forum), in the Development & Technical Discussion board.
-* Discuss on [genix Nation Discord](http://genixchat.org)
+* Discuss on the [autx Forum](https://autx.org/forum), in the Development & Technical Discussion board.
+* Discuss on [autx Nation Discord](http://genixchat.org)
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

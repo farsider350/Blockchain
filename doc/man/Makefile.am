@@ -5,9 +5,9 @@ if BUILD_BITCOIND
 endif
 
 if ENABLE_QT
-  dist_man1_MANS+=genix-qt.1
+  dist_man1_MANS+=autx-qt.1
 endif
 
 if BUILD_BITCOIN_UTILS
-  dist_man1_MANS+=genix-cli.1 genix-tx.1
+  dist_man1_MANS+=autx-cli.1 autx-tx.1
 endif

@@ -33,13 +33,13 @@ Follow the instructions in [build-generic](build-generic.md)
 Running
 -------
 
-genix Core is now available at `./src/genixd`
+autx Core is now available at `./src/genixd`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=genixrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/genixCore/genix.conf"
+    echo -e "rpcuser=genixrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/genixCore/autx.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/genixCore/genix.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/genixCore/autx.conf"
 
 The first time you run genixd, it will start downloading the blockchain. This process could take several hours.
 
@@ -50,20 +50,20 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/genixd -daemon # Starts the genix daemon.
-    ./src/genix-cli --help # Outputs a list of command-line options.
-    ./src/genix-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/genixd -daemon # Starts the autx daemon.
+    ./src/autx-cli --help # Outputs a list of command-line options.
+    ./src/autx-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for genix development.
+You can use Qt Creator as an IDE, for autx development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "genix-qt" as project name, enter src/qt as location
+4. Enter "autx-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
