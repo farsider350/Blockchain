@@ -12,7 +12,7 @@ The following are some helpful notes on how to run autx on your native platform.
 Unpack the files into a directory and run:
 
 - `bin/autx-qt` (GUI) or
-- `bin/genixd` (headless)
+- `bin/autxd` (headless)
 
 ### Windows
 
@@ -28,7 +28,7 @@ Drag autx-Qt to your applications folder, and then run autx-Qt.
 for help and more information.
 * See the [autx Developer Documentation](https://autx-docs.github.io/) 
 for technical specifications and implementation details.
-* Ask for help on [autx Nation Discord](http://genixchat.org)
+* Ask for help on [autx Nation Discord](http://autxchat.org)
 * Ask for help on the [autx Forum](https://autx.org/forum)
 
 Building
@@ -60,7 +60,7 @@ The autx Core repo's [root README](/README.md) contains relevant information on 
 
 ### Resources
 * Discuss on the [autx Forum](https://autx.org/forum), in the Development & Technical Discussion board.
-* Discuss on [autx Nation Discord](http://genixchat.org)
+* Discuss on [autx Nation Discord](http://autxchat.org)
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

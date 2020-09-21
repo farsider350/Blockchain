@@ -7,13 +7,13 @@ reset-files.bash
 
 *.exe
 src/autx
-src/genixd
+src/autxd
 src/autx-cli
 src/autx-tx
-src/test/test_genix
-src/test/test_genix_fuzzy
-src/qt/test/test_genix-qt
-src/bench/bench_genix
+src/test/test_autx
+src/test/test_autx_fuzzy
+src/qt/test/test_autx-qt
+src/bench/bench_autx
 
 # autoreconf
 Makefile.in
@@ -101,7 +101,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_genix.coverage/
+test_autx.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -119,14 +119,14 @@ test/cache/*
 .autotools
 /doc/doxygen/
 
-libgenixconsensus.pc
+libautxconsensus.pc
 contrib/devtools/split-debug.sh
 src/qt/autx-qt.bash
 qa/pull-tester/tests-config.sh
 
 #development symlinks
 autx-cli
-genixd
+autxd
 autx-qt
 make
 

@@ -33,24 +33,24 @@ Follow the instructions in [build-generic](build-generic.md)
 Running
 -------
 
-autx Core is now available at `./src/genixd`
+autx Core is now available at `./src/autxd`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=genixrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/genixCore/autx.conf"
+    echo -e "rpcuser=autxrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/autxCore/autx.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/genixCore/autx.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/autxCore/autx.conf"
 
-The first time you run genixd, it will start downloading the blockchain. This process could take several hours.
+The first time you run autxd, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/genixCore/debug.log
+    tail -f $HOME/Library/Application\ Support/autxCore/debug.log
 
 Other commands:
 -------
 
-    ./src/genixd -daemon # Starts the autx daemon.
+    ./src/autxd -daemon # Starts the autx daemon.
     ./src/autx-cli --help # Outputs a list of command-line options.
     ./src/autx-cli help # Outputs a list of RPC commands when the daemon is running.
 
