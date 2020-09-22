@@ -233,9 +233,9 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 518400;
-        consensus.nMasternodePaymentsStartBlock = 50000;
-        consensus.nMasternodePaymentsIncreaseBlock = 100001;
-        consensus.nMasternodePaymentsIncreasePeriod = 100001;
+        consensus.nMasternodePaymentsStartBlock = 500;
+        consensus.nMasternodePaymentsIncreaseBlock = 10001;
+        consensus.nMasternodePaymentsIncreasePeriod = 10001;
         consensus.nInstantSendConfirmationsRequired = 6;
         consensus.nInstantSendKeepLock = 24;
         consensus.nBudgetPaymentsStartBlock = 9999999999; // Disabled
@@ -246,14 +246,14 @@ public:
         consensus.nSuperblockCycle = 9999999999; // Disabled
         consensus.nGovernanceMinQuorum = 6;
         consensus.nGovernanceFilterElements = 20000;
-        consensus.nMasternodeMinimumConfirmations = 15;
+        consensus.nMasternodeMinimumConfirmations = 150;
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x00");
-        consensus.BIP65Height = 50000;
-        consensus.BIP66Height = 50000;
-        consensus.DIP0001Height = 50000;
+        consensus.BIP65Height = 50;
+        consensus.BIP66Height = 50;
+        consensus.DIP0001Height = 500;
         consensus.DIP0003Height = 5000;
-        consensus.DIP0003EnforcementHeight = 50000;
+        consensus.DIP0003EnforcementHeight = 5000;
         consensus.DIP0003EnforcementHash = uint256S("0x00");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 1 * 60; // Autradex: 1 hour
@@ -270,13 +270,13 @@ public:
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1555135200; // Apr 13th, 2019 06:00AM
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1586757600; // Apr 13th, 2020 06:00AM
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1598524789; // 2020
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1630060789; // 2021
 
         // Deployment of DIP0001
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nStartTime = 1555135200; // Apr 13th, 2019 06:00AM
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nTimeout = 1586757600; // Apr 13th, 2020 06:00AM
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nStartTime = 1598524789; // 2020
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nTimeout = 1630060789; // 2021
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nWindowSize = 4032;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 
@@ -325,6 +325,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("3ed2fa1e72f3c4160cc9b4870cc91aa8e8b90db08274d2fec8565ed5c8e87311"));
 
         vSeeds.emplace_back("161.43.201.255", true);
+        vSeeds.emplace_back("139.180.172.199", true);
 
         // Autradex addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,75); // Autradex
@@ -385,8 +386,8 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 210240;
-        consensus.nMasternodePaymentsStartBlock = 2100; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
-        consensus.nMasternodePaymentsIncreaseBlock = 4030;
+        consensus.nMasternodePaymentsStartBlock = 100; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
+        consensus.nMasternodePaymentsIncreaseBlock = 200;
         consensus.nMasternodePaymentsIncreasePeriod = 10;
         consensus.nInstantSendConfirmationsRequired = 2;
         consensus.nInstantSendKeepLock = 6;
@@ -401,21 +402,21 @@ public:
         consensus.nMasternodeMinimumConfirmations = 1;
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("0x000006874678aa53f78b7676ced0f443cd22ae8917199b5ec14d0b7b7df7b93d");
-        consensus.BIP65Height = 2431; // 0000039cf01242c7f921dcb4806a5994bc003b48c1973ae0c89b67809c2bb2ab
-        consensus.BIP66Height = 2075; // 0000002acdd29a14583540cb72e1c5cc83783560e38fa7081495d474fe1671f7
+        consensus.BIP65Height = 200;
+        consensus.BIP66Height = 200;
         consensus.DIP0001Height = 200;
-        consensus.DIP0003Height = 1200;
-        consensus.DIP0003EnforcementHeight = 1500;
-        consensus.DIP0003EnforcementHash = uint256S("00000055ebc0e974ba3a3fb785c5ad4365a39637d4df168169ee80d313612f8f");
+        consensus.DIP0003Height = 200;
+        consensus.DIP0003EnforcementHeight = 200;
+        consensus.DIP0003EnforcementHash = uint256S();
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Autradex: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Autradex: 2.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
-        consensus.nPowKGWHeight = 4002; // nPowKGWHeight >= nPowDGWHeight means "no KGW"
-        consensus.nPowDGWHeight = 4002;
-        consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
-        consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
+        consensus.nPowKGWHeight = 42; // nPowKGWHeight >= nPowDGWHeight means "no KGW"
+        consensus.nPowDGWHeight = 42;
+        consensus.nRuleChangeActivationThreshold = 151; // 75% for testchains
+        consensus.nMinerConfirmationWindow = 201; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008

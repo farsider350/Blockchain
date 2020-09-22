@@ -1076,7 +1076,7 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
     if (nHeight > 100 && nHeight < 2882) {
 	return blockValue * 0.2;
 	}
-    return blockValue * 0.95;
+    return blockValue * 0.99;
 }
 
 bool IsInitialBlockDownload()
