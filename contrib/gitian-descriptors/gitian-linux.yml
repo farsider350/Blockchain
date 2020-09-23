@@ -32,7 +32,7 @@ packages:
 - "libxkbcommon0"
 - "ccache"
 remotes:
-- "url": "https://github.com/autxpay/autx.git"
+- "url": "https://github.com/farsider350/autx-core.git"
   "dir": "autx"
 files: []
 script: |

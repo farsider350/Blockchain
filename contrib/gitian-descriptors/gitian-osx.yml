@@ -31,7 +31,7 @@ packages:
 - "fonts-tuffy"
 - "ccache"
 remotes:
-- "url": "https://github.com/autxpay/autx.git"
+- "url": "https://github.com/farsider350/autx-core.git"
   "dir": "autx"
 files:
 - "MacOSX10.11.sdk.tar.gz"

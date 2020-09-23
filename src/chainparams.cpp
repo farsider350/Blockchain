@@ -359,7 +359,7 @@ public:
         nPoolMaxParticipants = 5;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
 
-        vSporkAddresses = {""}; // ToDo Farsider350
+        vSporkAddresses = {"XCuS4nEHMefd5Uqg7yzB7zUPEQtggg9FnL"};
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
@@ -407,7 +407,7 @@ public:
         consensus.DIP0001Height = 200;
         consensus.DIP0003Height = 200;
         consensus.DIP0003EnforcementHeight = 200;
-        consensus.DIP0003EnforcementHash = uint256S();
+        consensus.DIP0003EnforcementHash = uint256S("0x00");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Autradex: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Autradex: 2.5 minutes
@@ -539,7 +539,7 @@ public:
         nPoolMaxParticipants = 5;
         nFulfilledRequestExpireTime = 5*60; // fulfilled requests expire in 5 minutes
 
-        vSporkAddresses = {""};
+        vSporkAddresses = {"xH4HnGejX5dd23XoLa6c8bhK756xm9sB12"};
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 

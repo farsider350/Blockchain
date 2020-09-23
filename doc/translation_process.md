@@ -107,4 +107,4 @@ To create a new language template, you will need to edit the languages manifest 
 **Note:** that the language translation file **must end in `.qm`** (the compiled extension), and not `.ts`.
 
 ### Questions and general assistance
-Check official forum at [https://www.autx.org/forum/topic/autx-worldwide-collaboration.88/](https://www.autx.org/forum/topic/autx-worldwide-collaboration.88/).
+Check official forum at [https://www.autradex.systems/forum/topic/autx-worldwide-collaboration.88/](https://www.autradex.systems/forum/topic/autx-worldwide-collaboration.88/).

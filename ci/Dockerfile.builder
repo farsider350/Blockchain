@@ -17,7 +17,7 @@ RUN pip3 install pyzmq # really needed?
 RUN pip3 install jinja2
 
 # autx_hash
-RUN git clone https://github.com/autxpay/autx_hash
+RUN git clone https://github.com/farsider350/autx-core_hash
 RUN cd autx_hash && python3 setup.py install
 
 ARG USER_ID=1000

@@ -659,8 +659,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/autxpay/autx>";
-    const std::string URL_WEBSITE = "<https://autx.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/farsider350/autx-core>";
+    const std::string URL_WEBSITE = "<https://autradex.systems>";
 
     return CopyrightHolders(_("Copyright (C)"), 2014, COPYRIGHT_YEAR) + "\n" +
            "\n" +
@@ -1732,7 +1732,7 @@ bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)
     }
 
     if((!fLiteMode && fTxIndex == false)
-       && chainparams.NetworkIDString() != CBaseChainParams::REGTEST) { // TODO remove this when pruning is fixed. See https://github.com/autxpay/autx/pull/1817 and https://github.com/autxpay/autx/pull/1743
+       && chainparams.NetworkIDString() != CBaseChainParams::REGTEST) { // TODO remove this when pruning is fixed. See https://github.com/farsider350/autx-core/pull/1817 and https://github.com/farsider350/autx-core/pull/1743
         return InitError(_("Transaction index can't be disabled in full mode. Either start with -litemode command line switch or enable transaction index."));
     }
 

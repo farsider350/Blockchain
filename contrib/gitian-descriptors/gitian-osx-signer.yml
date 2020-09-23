@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/autxpay/autx-detached-sigs.git"
+- "url": "https://github.com/farsider350/autx-core-detached-sigs.git"
   "dir": "signature"
 files:
 - "autxcore-osx-unsigned.tar.gz"

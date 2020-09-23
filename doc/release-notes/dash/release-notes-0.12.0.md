@@ -8,7 +8,7 @@ autx Core version 0.12.0 is now available from:
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/autxpay/autx/issues
+  https://github.com/farsider350/autx-core/issues
 
 
 How to Upgrade

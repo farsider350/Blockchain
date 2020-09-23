@@ -1,7 +1,7 @@
 autx Core
 ==========
 
-This is the official reference wallet for autx digital currency and comprises the backbone of the autx peer-to-peer network. You can [download autx Core](https://www.autx.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for autx digital currency and comprises the backbone of the autx peer-to-peer network. You can [download autx Core](https://www.autradex.systems/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -24,12 +24,12 @@ Drag autx-Qt to your applications folder, and then run autx-Qt.
 
 ### Need Help?
 
-* See the [autx documentation](https://docs.autx.org)
+* See the [autx documentation](https://docs.autradex.systems)
 for help and more information.
 * See the [autx Developer Documentation](https://autx-docs.github.io/) 
 for technical specifications and implementation details.
 * Ask for help on [autx Nation Discord](http://autxchat.org)
-* Ask for help on the [autx Forum](https://autx.org/forum)
+* Ask for help on the [autx Forum](https://autradex.systems/forum)
 
 Building
 ---------------------
@@ -59,7 +59,7 @@ The autx Core repo's [root README](/README.md) contains relevant information on 
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [autx Forum](https://autx.org/forum), in the Development & Technical Discussion board.
+* Discuss on the [autx Forum](https://autradex.systems/forum), in the Development & Technical Discussion board.
 * Discuss on [autx Nation Discord](http://autxchat.org)
 
 ### Miscellaneous

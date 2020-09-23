@@ -32,7 +32,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "autx"
-#define QAPP_ORG_DOMAIN "autx.org"
+#define QAPP_ORG_DOMAIN "autradex.systems"
 #define QAPP_APP_NAME_DEFAULT "autx-Qt"
 #define QAPP_APP_NAME_TESTNET "autx-Qt-testnet"
 #define QAPP_APP_NAME_DEVNET "autx-Qt-%s"

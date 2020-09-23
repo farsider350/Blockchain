@@ -1,8 +1,8 @@
 Source: autx
 Section: utils
 Priority: optional
-Maintainer: Holger Schinzel <holger@autx.org>
-Uploaders: Holger Schinzel <holger@autx.org>
+Maintainer: Holger Schinzel <holger@autradex.systems>
+Uploaders: Holger Schinzel <holger@autradex.systems>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -26,9 +26,9 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://www.autx.org/
-Vcs-Git: git://github.com/autxpay/autx.git
-Vcs-Browser: https://github.com/autxpay/autx
+Homepage: https://www.autradex.systems/
+Vcs-Git: git://github.com/farsider350/autx-core.git
+Vcs-Browser: https://github.com/farsider350/autx-core
 
 Package: autxd
 Architecture: any

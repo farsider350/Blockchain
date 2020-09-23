@@ -4,7 +4,7 @@ run using Python 3 but are compatible with Python 2.
 
 ## Step 0: Install autx_hash
 
-https://github.com/autxpay/autx_hash
+https://github.com/farsider350/autx-core_hash
 
 ## Step 1: Download hash list
 
