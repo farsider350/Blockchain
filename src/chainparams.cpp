@@ -248,12 +248,12 @@ public:
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 150;
         consensus.BIP34Height = 1;
-        consensus.BIP34Hash = uint256S("0x00");
+        consensus.BIP34Hash = uint256S("0x00000e4dd930ce07cb3a735cc6cbf2c7d298ae751ab115983bd35273e8e5c020");
         consensus.BIP65Height = 50;
         consensus.BIP66Height = 50;
-        consensus.DIP0001Height = 500;
-        consensus.DIP0003Height = 5000;
-        consensus.DIP0003EnforcementHeight = 5000;
+        consensus.DIP0001Height = 10000;
+        consensus.DIP0003Height = 15000;
+        consensus.DIP0003EnforcementHeight = 15001;
         consensus.DIP0003EnforcementHash = uint256S("0x00");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 1 * 60; // Autradex: 1 hour
@@ -302,10 +302,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000076aa9d5a7");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00");
+        consensus.defaultAssumeValid = uint256S("0x00000030cee569cf99255878414aa4e567c7c05d23c8d9c05c2970ff639d571e"); // Block 930
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -366,6 +366,7 @@ public:
         checkpointData = (CCheckpointData) {
             {
                 {0, uint256S("0x000006874678aa53f78b7676ced0f443cd22ae8917199b5ec14d0b7b7df7b93d")},
+                {900, uint256S("0x000000248e8b43733518d31a7f2991c356c422da709a2f5dc027ae455e04782e")},
             }
         };
 
