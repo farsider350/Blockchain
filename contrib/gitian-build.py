@@ -23,7 +23,7 @@ def setup():
             exit(1)
     subprocess.check_call(['sudo', 'apt-get', 'install', '-qq'] + programs)
     if not os.path.isdir('gitian.sigs'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/autxpay/gitian.sigs.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/autxcore/gitian.sigs.git'])
     if not os.path.isdir('autx-detached-sigs'):
         subprocess.check_call(['git', 'clone', 'https://github.com/farsider350/autx-core-detached-sigs.git'])
     if not os.path.isdir('gitian-builder'):

@@ -73,7 +73,7 @@ in some rare cases otherwise);
  0.13.1.0 Change log
 ===================
 
-See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.13.0.0...autxpay:v0.13.1.0).
+See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.13.0.0...autxcore:v0.13.1.0).
 
 ### Backports
 

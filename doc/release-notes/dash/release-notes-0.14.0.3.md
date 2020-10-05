@@ -88,7 +88,7 @@ The "getmempoolinfo" RPC also has a new field now which shows the same informati
 0.14.0.3 Change log
 ===================
 
-See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.14.0.2...autxpay:v0.14.0.3).
+See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.14.0.2...autxcore:v0.14.0.3).
 
 - [`f2443709b`](https://github.com/farsider350/autx-core/commit/f2443709b) Update release-notes.md for 0.14.0.3 (#3054)
 - [`17ba23871`](https://github.com/farsider350/autx-core/commit/17ba23871) Re-verify invalid IS sigs when the active quorum set rotated (#3052)

@@ -49,20 +49,20 @@ for(int i = 0; i < targets.size(); i++) {
           // restore cache
           def hasCache = false
           try {
-            copyArtifacts(projectName: "autxpay-autx/${BRANCH_NAME}", optional: true, selector: lastSuccessful(), filter: "ci-cache-${target}.tar.gz")
+            copyArtifacts(projectName: "autxcore-autx/${BRANCH_NAME}", optional: true, selector: lastSuccessful(), filter: "ci-cache-${target}.tar.gz")
           } catch (Exception e) {
           }
           if (fileExists("ci-cache-${target}.tar.gz")) {
             hasCache = true
-            echo "Using cache from autxpay-autx/${BRANCH_NAME}"
+            echo "Using cache from autxcore-autx/${BRANCH_NAME}"
           } else {
             try {
-              copyArtifacts(projectName: 'autxpay-autx/develop', optional: true, selector: lastSuccessful(), filter: "ci-cache-${target}.tar.gz");
+              copyArtifacts(projectName: 'autxcore-autx/develop', optional: true, selector: lastSuccessful(), filter: "ci-cache-${target}.tar.gz");
             } catch (Exception e) {
             }
             if (fileExists("ci-cache-${target}.tar.gz")) {
               hasCache = true
-              echo "Using cache from autxpay-autx/develop"
+              echo "Using cache from autxcore-autx/develop"
             }
           }
 

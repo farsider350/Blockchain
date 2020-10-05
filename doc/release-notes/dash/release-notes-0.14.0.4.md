@@ -94,7 +94,7 @@ in Bitcoin v0.15.1. This release of autx Core includes a backport of this fix.
 0.14.0.4 Change log
 ===================
 
-See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.14.0.3...autxpay:v0.14.0.4).
+See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.14.0.3...autxcore:v0.14.0.4).
 
 - [`5f98ed7a5`](https://github.com/farsider350/autx-core/commit/5f98ed7a5) [v0.14.0.x] Bump version to 0.14.0.4 and draft release notes (#3203)
 - [`c0dda38fe`](https://github.com/farsider350/autx-core/commit/c0dda38fe) Circumvent BIP69 sorting in fundrawtransaction.py test (#3100)

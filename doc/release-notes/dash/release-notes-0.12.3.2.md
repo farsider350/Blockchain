@@ -67,7 +67,7 @@ connectivity on devnets which are using nodes with multiple different ports.
 0.12.3.2 Change log
 ===================
 
-See detailed [change log](https://github.com/farsider350/autx-core/compare/v0.12.3.1...autxpay:v0.12.3.2) below.
+See detailed [change log](https://github.com/farsider350/autx-core/compare/v0.12.3.1...autxcore:v0.12.3.2) below.
 
 ### Network:
 - [`2474d9cb8`](https://github.com/farsider350/autx-core/commit/2474d9cb8) Sync mn list and mnw list from 3 peers max (#2169)

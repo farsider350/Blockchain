@@ -58,8 +58,8 @@ InstantSend transactions. The legacy system was disabled together with the succe
 but we had to keep supporting the legacy system for a while to ensure a smooth transition period. This version finally drops
 the legacy system completely.
 
-Read more about ChainLocks: https://github.com/autxpay/dips/blob/master/dip-0008.md
-Read more about LLMQ-based InstantSend: https://github.com/autxpay/dips/blob/master/dip-0010.md
+Read more about ChainLocks: https://github.com/autxcore/dips/blob/master/dip-0008.md
+Read more about LLMQ-based InstantSend: https://github.com/autxcore/dips/blob/master/dip-0010.md
 
 Sporks
 ------
@@ -231,7 +231,7 @@ modules were reorganized in separate folders to make navigation through code a b
 0.15 Change log
 ===============
 
-See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.14.0.5...autxpay:v0.15.0.0).
+See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.14.0.5...autxcore:v0.15.0.0).
 
 - [`3c055bf79`](https://github.com/farsider350/autx-core/commit/3c055bf79) Bump nMinimumChainWork and defaultAssumeValid (#3336)
 - [`818e7a6f7`](https://github.com/farsider350/autx-core/commit/818e7a6f7) Update release notes

@@ -76,7 +76,7 @@ This release also fixes a few crashes and compatibility issues.
 0.12.2.3 Change log
 ===================
 
-See detailed [change log](https://github.com/farsider350/autx-core/compare/v0.12.2.2...autxpay:v0.12.2.3) below.
+See detailed [change log](https://github.com/farsider350/autx-core/compare/v0.12.2.2...autxcore:v0.12.2.3) below.
 
 ### Backports:
 - [`068b20bc7`](https://github.com/farsider350/autx-core/commit/068b20bc7) Merge #8256: BUG: bitcoin-qt crash

@@ -315,7 +315,7 @@ Clone the git repositories for autx Core and Gitian.
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
 git clone https://github.com/farsider350/autx-core
-git clone https://github.com/autxpay/gitian.sigs.git
+git clone https://github.com/autxcore/gitian.sigs.git
 ```
 
 Setting up the Gitian image
@@ -489,6 +489,6 @@ Uploading signatures (not yet implemented)
 ---------------------
 
 In the future it will be possible to push your signatures (both the `.assert` and `.assert.sig` files) to the
-[autx/gitian.sigs](https://github.com/autxpay/gitian.sigs/) repository, or if that's not possible to create a pull
+[autx/gitian.sigs](https://github.com/autxcore/gitian.sigs/) repository, or if that's not possible to create a pull
 request.
 There will be an official announcement when this repository is online.

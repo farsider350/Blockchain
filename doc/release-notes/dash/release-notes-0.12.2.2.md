@@ -104,7 +104,7 @@ done too.
 0.12.2.2 Change log
 ===================
 
-See detailed [change log](https://github.com/farsider350/autx-core/compare/v0.12.2.1...autxpay:v0.12.2.2) below.
+See detailed [change log](https://github.com/farsider350/autx-core/compare/v0.12.2.1...autxcore:v0.12.2.2) below.
 
 ### Backports:
 - [`996f5103a`](https://github.com/farsider350/autx-core/commit/996f5103a) Backport #7056: Save last db read

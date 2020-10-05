@@ -248,7 +248,7 @@ public:
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 150;
         consensus.BIP34Height = 1;
-        consensus.BIP34Hash = uint256S("0x00000e4dd930ce07cb3a735cc6cbf2c7d298ae751ab115983bd35273e8e5c020");
+        consensus.BIP34Hash = uint256S("0x00000efd2b51d16c002a85d54af9d91b98fc8a35df2ca85138a49b49416af514");
         consensus.BIP65Height = 50;
         consensus.BIP66Height = 50;
         consensus.DIP0001Height = 10000;
@@ -302,17 +302,17 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThreshold = 3226; // 80% of 4032
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000076aa9d5a7");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000018035645f");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000030cee569cf99255878414aa4e567c7c05d23c8d9c05c2970ff639d571e"); // Block 930
+        consensus.defaultAssumeValid = uint256S("0x00000a290676b544ce543fada20b101fc9c4243e8706158a64c31a0d3f396e3f"); // Block 2666
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x2a; // Autradex
+        pchMessageStart[0] = 0x2c; // Autradex
         pchMessageStart[1] = 0x5b;
         pchMessageStart[2] = 0x2b;
         pchMessageStart[3] = 0x39;
@@ -326,6 +326,8 @@ public:
 
         vSeeds.emplace_back("161.43.201.255", true);
         vSeeds.emplace_back("139.180.172.199", true);
+        vSeeds.emplace_back("139.180.162.209", true);
+        vseeds.emplace_back("104.156.233.160", true);
 
         // Autradex addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,75); // Autradex
@@ -366,15 +368,17 @@ public:
         checkpointData = (CCheckpointData) {
             {
                 {0, uint256S("0x000006874678aa53f78b7676ced0f443cd22ae8917199b5ec14d0b7b7df7b93d")},
-                {900, uint256S("0x000000248e8b43733518d31a7f2991c356c422da709a2f5dc027ae455e04782e")},
+                {900, uint256S("0x000004a6811ea2796afdaa71d9d99d470b706930d79ddcca709fa9ab65056032")},
+                {1600, uint256S("0x00000735cb18af5b0c942988650448a3bc646e15b778ae1120a4f7b0da51603c")},
+                {2666, uint256S("0x00000a290676b544ce543fada20b101fc9c4243e8706158a64c31a0d3f396e3f")},
             }
         };
 
         chainTxData = ChainTxData{
-            1549043100, // * UNIX timestamp of last known number of transactions (Block 1173619)
-            1,   // * total number of transactions between genesis and that timestamp
+            1601718263, // * UNIX timestamp of last known number of transactions (Block 2666)
+            2672,   // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            0.2         // * estimated number of transactions per second after that timestamp
+            0.005         // * estimated number of transactions per second after that timestamp
         };
     }
 };

@@ -61,7 +61,7 @@ would happen.
 0.14.0.1 Change log
 ===================
 
-See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.14.0.0...autxpay:v0.14.0.1).
+See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.14.0.0...autxcore:v0.14.0.1).
 
 - [`a2baa93ec`](https://github.com/farsider350/autx-core/commit/a2baa93ec) Only require valid collaterals for votes and triggers (#2947) (#2957)
 - [`b293e6dde`](https://github.com/farsider350/autx-core/commit/b293e6dde) Fix off-by-one error in InstantSend mining info removal when disconnecting blocks (#2951)

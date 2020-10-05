@@ -68,7 +68,7 @@
         <string>application/x-autx-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>autxpaymentrequest</string>
+          <string>autxcorementrequest</string>
         </array>
       </dict>
     </dict>

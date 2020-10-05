@@ -62,7 +62,7 @@ updates. This should be fixed now.
 0.14.0.2 Change log
 ===================
 
-See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.14.0.1...autxpay:v0.14.0.2).
+See detailed [set of changes](https://github.com/farsider350/autx-core/compare/v0.14.0.1...autxcore:v0.14.0.2).
 
 - [`d2ff63e8d`](https://github.com/farsider350/autx-core/commit/d2ff63e8d) Use std::unique_ptr for mnList in CSimplifiedMNList (#3014)
 - [`321bbf5af`](https://github.com/farsider350/autx-core/commit/321bbf5af) Fix excessive memory use when flushing chainstate and EvoDB (#3008)
