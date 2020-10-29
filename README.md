@@ -2,7 +2,7 @@ Autradex Core
 ===============================
 
 * Website: https://autradex.systems/
-* Explorer: http://explorer.autradex.systems
+* Explorer: https://openchains.info/coin/autradex/
 * Discord: https://discord.gg/akKj8e8
 
 What is Autradex?
