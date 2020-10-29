@@ -327,7 +327,7 @@ public:
         vSeeds.emplace_back("161.43.201.255", true);
         vSeeds.emplace_back("139.180.172.199", true);
         vSeeds.emplace_back("139.180.162.209", true);
-        vseeds.emplace_back("104.156.233.160", true);
+        vSeeds.emplace_back("104.156.233.160", true);
 
         // Autradex addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,75); // Autradex
