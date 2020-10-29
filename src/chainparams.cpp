@@ -251,9 +251,9 @@ public:
         consensus.BIP34Hash = uint256S("0x00000efd2b51d16c002a85d54af9d91b98fc8a35df2ca85138a49b49416af514");
         consensus.BIP65Height = 50;
         consensus.BIP66Height = 50;
-        consensus.DIP0001Height = 10000;
-        consensus.DIP0003Height = 15000;
-        consensus.DIP0003EnforcementHeight = 15001;
+        consensus.DIP0001Height = 500;
+        consensus.DIP0003Height = 5000;
+        consensus.DIP0003EnforcementHeight = 5000;
         consensus.DIP0003EnforcementHash = uint256S("0x00");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 1 * 60; // Autradex: 1 hour
