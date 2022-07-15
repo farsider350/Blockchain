@@ -15,46 +15,8 @@ env:
   COMPRESS_DIR: autx-compress
   TEST_LOG_ARTIFACT_DIR: test-logs
 jobs:
-  checking-build-version:
-    name: Checking Build Versioning
-    runs-on: ubuntu-18.04
-    steps:
-      - name: Trigger by
-        run: |
-          echo "checking out $GITHUB_REF trigger by $GITHUB_EVENT_NAME"
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Read build.properties key for master
-        if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/master'}}
-        id: release-version
-        uses: christian-draeger/read-properties@1.0.1
-        with:
-          path: build.properties
-          property: 'release-version'
-      - name: Read build.properties key for develop
-        if: ${{ github.event_name == 'pull_request' || endsWith(github.ref, 'develop') || contains(github.ref, 'ft/')}}
-        id: snapshot-version
-        uses: christian-draeger/read-properties@1.0.1
-        with:
-          path: build.properties
-          property: 'snapshot-version'
-      - name: create version
-        if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/master'}}
-        run: |
-          echo "BUILD_VERSION=${{ steps.release-version.outputs.value }}" > version.txt
-      - name: create snapshot version
-        if: ${{ github.event_name == 'pull_request' || endsWith(github.ref, 'develop') || contains(github.ref, 'ft/')}}
-        run: |
-          echo "BUILD_VERSION=${{ steps.snapshot-version.outputs.value }}" > version.txt
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: version
-          path: version.txt
-
   build-ubuntu18:
     name: Ubuntu18 build
-    needs: checking-build-version
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
@@ -114,7 +76,6 @@ jobs:
           path: ${{ env.COMPRESS_DIR }}
   build-ubuntu20:
     name: Ubuntu20 build
-    needs: checking-build-version
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -173,7 +134,6 @@ jobs:
           path: ${{ env.COMPRESS_DIR }}
   build-macos:
     name: macos build
-    needs: checking-build-version
     runs-on: macos-10.15
     steps:
       - name: Checkout
@@ -245,7 +205,6 @@ jobs:
           path: macos-dmg
   build-arm-32:
     name: arm 32 bit build
-    needs: checking-build-version
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
@@ -303,7 +262,6 @@ jobs:
           path: ${{ env.COMPRESS_DIR }}
   build-arm-64:
     name: arm 64 bit build
-    needs: checking-build-version
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
@@ -361,7 +319,6 @@ jobs:
           path: ${{ env.COMPRESS_DIR }}
   build-win:
     name: window build
-    needs: checking-build-version
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
